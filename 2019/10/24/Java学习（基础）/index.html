@@ -5,13 +5,16 @@
   
 
   
-  <title>Hexo</title>
+  <title>Java学习（基础） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="Java基础语法 继承 super()   变量声明必须初始化 Java中整数默认int类型，浮点数默认double类型 Java中的访问修饰符 public：可以被所有其他类访问 protected：可以被自身、子类及同一个包中的类可以访问 private：只能被自己访问、修改 default：可以被同一个包中的类访问   == 可以用于基本类型和引用类型 基本类型：比较值 引用类型：比较引用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习（基础）">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;24&#x2F;Java%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Java基础语法 继承 super()   变量声明必须初始化 Java中整数默认int类型，浮点数默认double类型 Java中的访问修饰符 public：可以被所有其他类访问 protected：可以被自身、子类及同一个包中的类可以访问 private：只能被自己访问、修改 default：可以被同一个包中的类访问   == 可以用于基本类型和引用类型 基本类型：比较值 引用类型：比较引用">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-24T10:35:12.407Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,9 +62,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Java学习（基础）" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Java学习（基础）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/24/Java%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89/" class="article-date">
   <time datetime="2019-10-24T10:35:12.000Z" itemprop="datePublished">2019-10-24</time>
@@ -74,8 +75,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/Java%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89/">Java学习（基础）</a>
+    <h1 class="article-title" itemprop="name">
+      Java学习（基础）
     </h1>
   
 
@@ -433,225 +434,19 @@ Finally {
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Git笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/23/Git%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2019-10-23T04:14:02.000Z" itemprop="datePublished">2019-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/Git%E7%AC%94%E8%AE%B0/">Git笔记</a>
-    </h1>
+    <a href="/2019/10/23/Git%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Git笔记</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Git基础命令（LOCAL）"><a href="#Git基础命令（LOCAL）" class="headerlink" title="Git基础命令（LOCAL）"></a>Git基础命令（LOCAL）</h2><ol>
-<li>初始化仓库<ul>
-<li>git init</li>
-</ul>
-</li>
-<li>把文件修改添加到暂存区<ul>
-<li>git add &lt; filename &gt; </li>
-</ul>
-</li>
-<li>把暂存区的所有的内容添加到当前分支<ul>
-<li>git commit  -m &lt; message &gt;    </li>
-</ul>
-</li>
-<li>查看工作区状态<ul>
-<li>git status  </li>
-</ul>
-</li>
-<li>查看不同<ul>
-<li>git diff &lt; filename &gt;</li>
-</ul>
-</li>
-<li>显示提交日志<ul>
-<li>git log &lt; –preety=oneline &gt; </li>
-</ul>
-</li>
-<li>回退到上个版本   HEAD^^ 上两个版本   HEAD~n 上n个版本<ul>
-<li>git reset –hard &lt; HEAD^ &gt; &lt;  commit_id &gt; </li>
-</ul>
-</li>
-<li>显示你的每次命令<ul>
-<li>git reflog</li>
-</ul>
-</li>
-<li>让文件回到最近一次add或commit时的状态<ul>
-<li>git checkout –file</li>
-</ul>
-</li>
-<li>撤销暂存区的修改至工作区<ul>
-<li>git reset HEAD filename</li>
-</ul>
-</li>
-<li>删除文件/目录<ul>
-<li>git rm &lt; file/catalog &gt; -r</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="Git基础命令（REMOTE）"><a href="#Git基础命令（REMOTE）" class="headerlink" title="Git基础命令（REMOTE）"></a>Git基础命令（REMOTE）</h2><ol>
-<li>本地仓库关联远程仓库<ul>
-<li>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:github账户名/项目名  </li>
-</ul>
-</li>
-<li>当前分支推送到远程分支;推送时附上-u参数后,把本地的master分支和远程master分支关联<ul>
-<li>git push -u origin master</li>
-</ul>
-</li>
-<li>当从远程库clone时:默认情况下,只能看到本地的master分支<ul>
-<li>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:github账户名称/项目名称</li>
-</ul>
-</li>
-<li>要在dev分支上开发就必须建立远程origin的dev分支到本地<ul>
-<li>git checkout -b dev origin/dev</li>
-</ul>
-</li>
-<li>推送本地分支代码至远程分支<ul>
-<li>git pull &lt;　remote　&gt; &lt;　branch　&gt;         </li>
-</ul>
-</li>
-<li>创建并切换分支<ul>
-<li>git checkout -b branchname</li>
-</ul>
-</li>
-<li>查看分支<ul>
-<li>git branch</li>
-</ul>
-</li>
-<li>创建分支<ul>
-<li>git branch &lt; name &gt;</li>
-</ul>
-</li>
-<li>切换分支<ul>
-<li>git checkout &lt; name &gt;</li>
-</ul>
-</li>
-<li>合并branchname分支到当前分支<ul>
-<li>git merge &lt; branchname &gt;</li>
-</ul>
-</li>
-<li>删除分支<ul>
-<li>git branch -d &lt; branchname &gt;</li>
-</ul>
-</li>
-<li>查看git的提交记录<ul>
-<li>git log –graph</li>
-</ul>
-</li>
-<li>本地分支关联远程分支<ul>
-<li>git branch –set-upstream localbranchname origin/branchname</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="Git实际开发中的使用"><a href="#Git实际开发中的使用" class="headerlink" title="Git实际开发中的使用"></a>Git实际开发中的使用</h2><h3 id="1-拉取远程仓库代码至本地仓库"><a href="#1-拉取远程仓库代码至本地仓库" class="headerlink" title="1. 拉取远程仓库代码至本地仓库"></a>1. 拉取远程仓库代码至本地仓库</h3><ol>
-<li>克隆远程仓库项目至本地仓库<ul>
-<li>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:项目地址</li>
-</ul>
-</li>
-<li>本地创建dev分支并clone远程的dev分支<ul>
-<li>git checkout -b dev origin/dev</li>
-</ul>
-</li>
-</ol>
-<h3 id="2-提交本地仓库代码至远程仓库"><a href="#2-提交本地仓库代码至远程仓库" class="headerlink" title="2. 提交本地仓库代码至远程仓库"></a>2. 提交本地仓库代码至远程仓库</h3><ol>
-<li>储藏修改代码</li>
-<li>拉取远程仓库代码</li>
-<li>弹出储藏<ul>
-<li>有冲突就解决冲突</li>
-</ul>
-</li>
-<li>添加工作区代码至stage区<ul>
-<li>git add</li>
-</ul>
-</li>
-<li>提交stage区文件<ul>
-<li>git commit -m</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="Git进阶（后续待完善…）"><a href="#Git进阶（后续待完善…）" class="headerlink" title="Git进阶（后续待完善…）"></a>Git进阶（后续待完善…）</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/Git%E7%AC%94%E8%AE%B0/" data-id="ck24km5820004isad08z8glal" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/23/hello-world/" class="article-date">
-  <time datetime="2019-10-23T01:03:08.166Z" itemprop="datePublished">2019-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/hello-world/" data-id="ck24km5a30005isadc9ecex3n" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
